@@ -12,7 +12,7 @@ public class BeanUtils {
      */
     public static Object toBean(PropertyDescriptor propertyDescriptor,Object value) {
         try {
-            return new TypeSwitchChain().doTypeSwitch(propertyDescriptor,value);
+            return new TypeSwitchChain().doTypeSwitch(propertyDescriptor.getPropertyType(),value);
         } catch (Exception e) {
             System.out.println(e);
             throw new RuntimeException(e);

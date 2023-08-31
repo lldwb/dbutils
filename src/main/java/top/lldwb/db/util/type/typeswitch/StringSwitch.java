@@ -7,11 +7,11 @@ import java.beans.PropertyDescriptor;
 
 public class StringSwitch implements TypeSwitch {
     @Override
-    public Object valueOf(TypeSwitchChain typeSwitchChain, PropertyDescriptor propertyDescriptor, Object value) {
-        if (propertyDescriptor.getPropertyType() == String.class) {
+    public Object valueOf(TypeSwitchChain typeSwitchChain, Class<?> clazz, Object value) {
+        if (clazz == String.class) {
             return value;
         } else {
-            return typeSwitchChain.doTypeSwitch(propertyDescriptor,value);
+            return typeSwitchChain.doTypeSwitch(clazz,value);
         }
     }
 }
