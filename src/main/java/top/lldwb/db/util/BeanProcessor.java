@@ -1,6 +1,6 @@
 package top.lldwb.db.util;
 
-import top.lldwb.db.util.type.BeanUtils;
+import top.lldwb.db.util.util.BeanUtils;
 
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
