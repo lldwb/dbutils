@@ -42,6 +42,13 @@
             <artifactId>classgraph</artifactId>
             <version>4.8.158</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-dbutils/commons-dbutils -->
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.8.0</version>
+        </dependency>
     </dependencies>
 
 </project>

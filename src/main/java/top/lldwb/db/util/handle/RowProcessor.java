@@ -1,9 +1,7 @@
 package top.lldwb.db.util.handle;
 
 import top.lldwb.db.util.BeanProcessor;
-import top.lldwb.db.util.Column;
 
-import java.lang.reflect.Field;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
@@ -48,7 +46,7 @@ public class RowProcessor {
         return map;
     }
 
-    public static Object toValue(ResultSet resultSet, int columnIndex) throws SQLException {
+    public static Object toColumn(ResultSet resultSet, int columnIndex) throws SQLException {
         return resultSet.getObject(columnIndex);
     }
 

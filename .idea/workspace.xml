@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d58384a4-3668-4018-9818-43eebf06d2cd" name="更改" comment="优化">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/typeswitch/TimestampSwitch.java" afterDir="false" />
+    <list default="true" id="d58384a4-3668-4018-9818-43eebf06d2cd" name="更改" comment="添加Timestamp的责任链">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/AbstractListHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/BeanListHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/BeanProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/BeanProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ColumnHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ColumnHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/RowProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/RowProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/top/lldwb/db/util/SqlExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/top/lldwb/db/util/SqlExecutorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +31,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.8.0/commons-dbutils-1.8.0-sources.jar!/org/apache/commons/dbutils/RowProcessor.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.8.0/commons-dbutils-1.8.0-sources.jar!/org/apache/commons/dbutils/handlers/AbstractListHandler.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.8.0/commons-dbutils-1.8.0-sources.jar!/org/apache/commons/dbutils/handlers/ArrayHandler.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.8.0/commons-dbutils-1.8.0-sources.jar!/org/apache/commons/dbutils/handlers/ArrayListHandler.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.8.0/commons-dbutils-1.8.0-sources.jar!/org/apache/commons/dbutils/handlers/columns/ByteColumnHandler.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.8.0/commons-dbutils-1.8.0-sources.jar!/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandler.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.8.0/commons-dbutils-1.8.0-sources.jar!/org/apache/commons/dbutils/handlers/columns/LongColumnHandler.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.8.0/commons-dbutils-1.8.0-sources.jar!/org/apache/commons/dbutils/handlers/properties/DatePropertyHandler.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.8.0/commons-dbutils-1.8.0-sources.jar!/org/apache/commons/dbutils/handlers/properties/StringEnumPropertyHandler.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.8.0/commons-dbutils-1.8.0-sources.jar!/org/apache/commons/dbutils/handlers/properties/package-info.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -127,7 +144,7 @@
       <workItem from="1693273587262" duration="30000" />
       <workItem from="1693273658292" duration="7090000" />
       <workItem from="1693355794164" duration="19113000" />
-      <workItem from="1693438857881" duration="5384000" />
+      <workItem from="1693438857881" duration="13329000" />
     </task>
     <task id="LOCAL-00001" summary="完成javaBean拷贝">
       <created>1693443696485</created>
@@ -157,12 +174,20 @@
       <option name="project" value="LOCAL" />
       <updated>1693444137920</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加Timestamp的责任链">
+      <created>1693444588453</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693444588453</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成javaBean拷贝" />
     <MESSAGE value="优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化" />
+    <MESSAGE value="添加Timestamp的责任链" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Timestamp的责任链" />
   </component>
 </project>

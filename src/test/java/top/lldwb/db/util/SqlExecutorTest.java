@@ -2,17 +2,18 @@ package top.lldwb.db.util;
 
 import org.junit.jupiter.api.Test;
 import top.lldwb.db.util.entity.User;
-import top.lldwb.db.util.handle.BeanHandler;
-import top.lldwb.db.util.handle.ColumnHandler;
-import top.lldwb.db.util.handle.MapHandler;
-import top.lldwb.db.util.handle.ObjectArrayHandler;
+import top.lldwb.db.util.handle.*;
 
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 class SqlExecutorTest {
@@ -38,42 +39,21 @@ class SqlExecutorTest {
 //        System.out.println(count);
 
         sqlExecutor = new SqlExecutor(ConnectionUtils.getConnection());
+////        User user = sqlExecutor.sqlQuery("select * from user", new BeanHandler<>(User.class));
 //        User user = sqlExecutor.sqlQuery("select * from user", new BeanHandler<>(User.class));
-        User user = sqlExecutor.sqlQuery("select * from user", new BeanHandler<>(User.class));
-        System.out.println(user);
+//        System.out.println(user);
+
+        sqlExecutor = new SqlExecutor(ConnectionUtils.getConnection());
+        List<User> list = sqlExecutor.sqlQuery("select * from user", new BeanListHandler<>(User.class));
+        list.forEach(k -> System.out.println(k));
     }
 
     @Test
-    void test() throws IntrospectionException {
-        class Person {
-            private String name;
-            private int age;
+    void test() throws IntrospectionException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
 
-            public String getName() {
-                return name;
-            }
-
-            public void setName(String name) {
-                this.name = name;
-            }
-
-            public int getAge() {
-                return age;
-            }
-
-            public void setAge(int age) {
-                this.age = age;
-            }
-        }
-
-        BeanInfo info = Introspector.getBeanInfo(Person.class);
-        PropertyDescriptor[] propertyDescriptors = info.getPropertyDescriptors();
-        for (
-                PropertyDescriptor pd : info.getPropertyDescriptors()) {
-            System.out.println(pd.getName());
-            System.out.println("  " + pd.getReadMethod());
-            System.out.println("  " + pd.getWriteMethod());
-        }
-
+        User user = new User();
+        Method method = User.class.getMethod("set" + "UserName", String.class);
+        method.invoke(user, "反射");
+        System.out.println(user);
     }
 }

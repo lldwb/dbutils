@@ -74,7 +74,7 @@ public class BeanProcessor {
         try {
             // Introspector类为工具提供了一种了解目标Java Bean所支持的属性、事件和方法的标准方法。
             // BeanInfo接口创建BeanInfo类，并提供关于bean的方法、属性、事件和其他特性的显式信息
-            BeanInfo beanInfo = Introspector.getBeanInfo(clazz);
+            BeanInfo beanInfo = Introspector.getBeanInfo(clazz,Object.class);
             // 返回bean的所有属性的描述符
             return beanInfo.getPropertyDescriptors();
         } catch (IntrospectionException e) {
