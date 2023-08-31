@@ -1,8 +1,8 @@
-package org.nf.db.util.util;
+package top.lldwb.db.util.util;
 
 import io.github.classgraph.ClassGraph;
 import io.github.classgraph.ScanResult;
-import top.lldwb.StrategyPattern.Calculator;
+import top.lldwb.db.util.type.TypeSwitch;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,7 @@ public class ScanUtils {
     public static List<Class<?>> scanImpl(Class<?> clazz, String... packages) {
         List<Class<?>> list = new ArrayList<>();
         ScanUtils.scan(packages).forEach(aClass -> {
-            if (clazz.isAssignableFrom(aClass) && clazz.get != aClass) {
+            if (clazz.isAssignableFrom(aClass)) {
                 list.add(aClass);
             }
         });
