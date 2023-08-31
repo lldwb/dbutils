@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d58384a4-3668-4018-9818-43eebf06d2cd" name="更改" comment="完成javaBean拷贝">
+    <list default="true" id="d58384a4-3668-4018-9818-43eebf06d2cd" name="更改" comment="优化">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/typeswitch/TimestampSwitch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/BeanUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/TypeSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/TypeSwitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/TypeSwitchChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/TypeSwitchChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/typeswitch/IntegerSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/typeswitch/IntegerSwitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/typeswitch/StringSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/typeswitch/StringSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/top/lldwb/db/util/SqlExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/top/lldwb/db/util/SqlExecutorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +127,7 @@
       <workItem from="1693273587262" duration="30000" />
       <workItem from="1693273658292" duration="7090000" />
       <workItem from="1693355794164" duration="19113000" />
-      <workItem from="1693438857881" duration="4830000" />
+      <workItem from="1693438857881" duration="5384000" />
     </task>
     <task id="LOCAL-00001" summary="完成javaBean拷贝">
       <created>1693443696485</created>
@@ -139,11 +136,33 @@
       <option name="project" value="LOCAL" />
       <updated>1693443696485</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="优化">
+      <created>1693444021144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693444021144</updated>
+    </task>
+    <task id="LOCAL-00003" summary="优化">
+      <created>1693444114149</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693444114149</updated>
+    </task>
+    <task id="LOCAL-00004" summary="优化">
+      <created>1693444137920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693444137920</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成javaBean拷贝" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成javaBean拷贝" />
+    <MESSAGE value="优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化" />
   </component>
 </project>

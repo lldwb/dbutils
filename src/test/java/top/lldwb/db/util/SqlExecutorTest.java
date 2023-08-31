@@ -39,7 +39,7 @@ class SqlExecutorTest {
 
         sqlExecutor = new SqlExecutor(ConnectionUtils.getConnection());
 //        User user = sqlExecutor.sqlQuery("select * from user", new BeanHandler<>(User.class));
-        User user = sqlExecutor.sqlQuery("select user_id,user_name from user", new BeanHandler<>(User.class));
+        User user = sqlExecutor.sqlQuery("select * from user", new BeanHandler<>(User.class));
         System.out.println(user);
     }
 
