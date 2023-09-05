@@ -123,7 +123,7 @@ public class BeanProcessor {
             Class<?> fieldType = propertyDescriptor.getPropertyType();
             // 根据特定的列名获取数据
             Object value = resultSet.getObject(columnLabel);
-            // 如果字段不是基本数据类型,同时数据为空(为什么使用&&不使用||)
+            // 如果字段不是基本数据类型,同时数据为空(因为基本数据类型不允许为空，如果传入数据为空会报错)
             if (!fieldType.isPrimitive() && value == null) {
                 return null;
             }

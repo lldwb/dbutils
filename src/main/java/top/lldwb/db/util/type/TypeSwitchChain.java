@@ -1,34 +1,12 @@
 package top.lldwb.db.util.type;
 
-import top.lldwb.db.util.util.ScanUtils;
-
-import java.beans.PropertyDescriptor;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ServiceLoader;
 
 public class TypeSwitchChain {
-    private Iterator<TypeSwitch> iterator;
-    private static List<Class<?>> classList;
-
-    static {
-        classList = ScanUtils.scanImpl(TypeSwitch.class, "top.lldwb.db.util.type.typeswitch");
-    }
-
-    public TypeSwitchChain() {
-        List<TypeSwitch> list = new ArrayList<>();
-        classList.forEach(clazz -> {
-            try {
-                list.add((TypeSwitch) clazz.newInstance());
-            } catch (InstantiationException e) {
-                throw new RuntimeException(e);
-            } catch (IllegalAccessException e) {
-                throw new RuntimeException(e);
-            }
-        });
-        iterator = list.listIterator();
-    }
+    private Iterator<TypeSwitch> iterator = ServiceLoader.load(TypeSwitch.class).iterator();
 
     public Object doTypeSwitch(Class<?> clazz, Object value) {
         if (iterator.hasNext()) {

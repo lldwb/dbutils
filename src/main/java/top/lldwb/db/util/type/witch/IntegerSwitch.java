@@ -1,9 +1,7 @@
-package top.lldwb.db.util.type.typeswitch;
+package top.lldwb.db.util.type.witch;
 
 import top.lldwb.db.util.type.TypeSwitch;
 import top.lldwb.db.util.type.TypeSwitchChain;
-
-import java.beans.PropertyDescriptor;
 
 public class IntegerSwitch implements TypeSwitch {
     @Override
