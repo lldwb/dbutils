@@ -3,13 +3,14 @@ package top.lldwb.db.util.type.witch;
 import top.lldwb.db.util.type.TypeSwitch;
 import top.lldwb.db.util.type.TypeSwitchChain;
 
-public class StringSwitch implements TypeSwitch {
+public class StringSwitch implements TypeSwitch<String> {
     @Override
-    public Object valueOf(TypeSwitchChain typeSwitchChain, Class<?> clazz, Object value) {
-        if (clazz == String.class) {
-            return value;
-        } else {
-            return typeSwitchChain.doTypeSwitch(clazz,value);
-        }
+    public boolean supports(Class<?> clazz) {
+        return clazz == String.class;
+    }
+
+    @Override
+    public String valueOf(Object value) {
+        return value.toString();
     }
 }

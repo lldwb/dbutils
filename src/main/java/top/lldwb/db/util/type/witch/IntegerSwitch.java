@@ -1,15 +1,15 @@
 package top.lldwb.db.util.type.witch;
 
 import top.lldwb.db.util.type.TypeSwitch;
-import top.lldwb.db.util.type.TypeSwitchChain;
 
-public class IntegerSwitch implements TypeSwitch {
+public class IntegerSwitch implements TypeSwitch<Integer> {
     @Override
-    public Object valueOf(TypeSwitchChain typeSwitchChain, Class<?> clazz, Object value) {
-        if (clazz == Integer.class || clazz == Integer.TYPE) {
-            return Integer.valueOf(value.toString());
-        } else {
-            return typeSwitchChain.doTypeSwitch(clazz, value);
-        }
+    public boolean supports(Class clazz) {
+        return clazz == Integer.class || clazz == Integer.TYPE;
+    }
+
+    @Override
+    public Integer valueOf(Object value) {
+        return Integer.valueOf(value.toString());
     }
 }

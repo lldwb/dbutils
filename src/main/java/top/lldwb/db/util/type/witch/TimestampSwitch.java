@@ -7,11 +7,12 @@ import java.sql.Timestamp;
 
 public class TimestampSwitch implements TypeSwitch {
     @Override
-    public Object valueOf(TypeSwitchChain typeSwitchChain, Class<?> clazz, Object value) {
-        if (clazz == Timestamp.class) {
-            return Timestamp.valueOf(value.toString());
-        } else {
-            return typeSwitchChain.doTypeSwitch(clazz,value);
-        }
+    public boolean supports(Class clazz) {
+        return clazz == Timestamp.class;
+    }
+
+    @Override
+    public Object valueOf(Object value) {
+        return Timestamp.valueOf(value.toString());
     }
 }
