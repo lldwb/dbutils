@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.ServiceLoader;
 
 public class TypeSwitchChain {
-    private Iterator<TypeSwitch> iterator = ServiceLoader.load(TypeSwitch.class).iterator();
+    private static ServiceLoader<TypeSwitch> switches = ServiceLoader.load(TypeSwitch.class);
+    private Iterator<TypeSwitch> iterator = switches.iterator();
 
     public Object doTypeSwitch(Class<?> clazz, Object value) {
         if (iterator.hasNext()) {
