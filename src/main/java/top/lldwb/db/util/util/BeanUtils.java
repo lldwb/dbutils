@@ -3,7 +3,6 @@ package top.lldwb.db.util.util;
 import top.lldwb.db.util.type.TypeSwitchChain;
 
 import java.beans.PropertyDescriptor;
-import java.lang.reflect.Field;
 
 public class BeanUtils {
     /**

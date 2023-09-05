@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d58384a4-3668-4018-9818-43eebf06d2cd" name="更改" comment="类型责任链：从反射包扫描修改成sqi机制">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/TypeSwitchChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/TypeSwitchChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/util/ScanUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/TypeSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/type/TypeSwitch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +143,7 @@
       <workItem from="1693355794164" duration="19113000" />
       <workItem from="1693438857881" duration="14792000" />
       <workItem from="1693810646366" duration="2252000" />
-      <workItem from="1693875434606" duration="5283000" />
+      <workItem from="1693875434606" duration="5888000" />
     </task>
     <task id="LOCAL-00001" summary="完成javaBean拷贝">
       <created>1693443696485</created>
@@ -196,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693879944582</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="类型责任链：从反射包扫描修改成sqi机制">
+      <created>1693880729866</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693880729866</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

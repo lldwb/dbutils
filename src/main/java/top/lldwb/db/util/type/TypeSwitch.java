@@ -1,8 +1,5 @@
 package top.lldwb.db.util.type;
 
-import java.beans.PropertyDescriptor;
-import java.lang.reflect.Field;
-
 public interface TypeSwitch {
     /**
      * 可以处理返回值
