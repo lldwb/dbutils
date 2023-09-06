@@ -129,7 +129,6 @@ public class BeanProcessor {
             }
             // 类型转换链
             return BeanUtils.toBean(propertyDescriptor,value);
-//            return null;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

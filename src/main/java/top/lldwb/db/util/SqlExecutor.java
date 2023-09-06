@@ -2,6 +2,9 @@ package top.lldwb.db.util;
 
 import java.sql.*;
 
+/**
+ *  SQL执行器
+ */
 public class SqlExecutor {
     private Connection connection;
 
@@ -9,6 +12,13 @@ public class SqlExecutor {
         this.connection = connection;
     }
 
+    /**
+     * 执行增删改操作
+     *
+     * @param sql     sql语句
+     * @param objects 参数
+     * @return
+     */
     public int sqlUpdate(String sql, Object... objects) {
         if (connection == null) {
             throw new RuntimeException("connection Null");
@@ -20,7 +30,7 @@ public class SqlExecutor {
         PreparedStatement preparedStatement = null;
         try {
             preparedStatement = connection.prepareStatement(sql);
-            addParam(preparedStatement,objects);
+            addParam(preparedStatement, objects);
             return preparedStatement.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -30,6 +40,15 @@ public class SqlExecutor {
         }
     }
 
+    /**
+     * 执行查询使用结果集对象处理结果集并返回结果
+     *
+     * @param sql     sql语句
+     * @param handler 处理器
+     * @param objects 参数
+     * @param <T>
+     * @return
+     */
     public <T> T sqlQuery(String sql, ResultSetHandler<T> handler, Object... objects) {
         if (connection == null) {
             throw new RuntimeException("connection Null");
@@ -43,7 +62,7 @@ public class SqlExecutor {
         // O/R 相互转换:对象/关系 映射
         try {
             preparedStatement = connection.prepareStatement(sql);
-            addParam(preparedStatement,objects);
+            addParam(preparedStatement, objects);
             return handler.handler(preparedStatement.executeQuery());
 
 //            // 关系转换成对象就叫对象关系映射
@@ -70,6 +89,13 @@ public class SqlExecutor {
         }
     }
 
+    /**
+     * 将参数插入到SQL语句的对象
+     *
+     * @param preparedStatement SQL语句的对象
+     * @param objects           参数
+     * @throws SQLException
+     */
     private void addParam(PreparedStatement preparedStatement, Object... objects) throws SQLException {
         int count = 1;
         for (Object object : objects) {
@@ -78,6 +104,11 @@ public class SqlExecutor {
         }
     }
 
+    /**
+     * 关闭结果集
+     *
+     * @param resultSet 结果集
+     */
     private void close(ResultSet resultSet) {
         if (resultSet != null) {
             try {
@@ -88,6 +119,11 @@ public class SqlExecutor {
         }
     }
 
+    /**
+     * 关闭SQL语句的对象
+     *
+     * @param preparedStatement SQL语句的对象
+     */
     private void close(PreparedStatement preparedStatement) {
         if (preparedStatement != null) {
             try {
@@ -98,6 +134,9 @@ public class SqlExecutor {
         }
     }
 
+    /**
+     * 关闭连接对象
+     */
     private void close() {
         if (connection != null) {
             try {
