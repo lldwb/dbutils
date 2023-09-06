@@ -104,8 +104,7 @@ public class BeanProcessor {
             // 将此字符串与另一个字符串进行比较，忽略大小写考虑
             return fieldName.equalsIgnoreCase(columnLabel);
         } catch (NoSuchFieldException e) {
-//            throw new RuntimeException(e);
-            return false;
+            throw new RuntimeException(e);
         }
     }
 
