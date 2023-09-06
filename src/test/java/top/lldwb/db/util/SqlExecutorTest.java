@@ -19,7 +19,7 @@ class SqlExecutorTest {
         SqlExecutor sqlExecutor;
 
 //        sqlExecutor = new SqlExecutor(ConnectionUtils.getConnection());
-//        Object[] objects = sqlExecutor.sqlQuery("select * from user",new ObjectArrayHandler());
+//        Object[] objects = sqlExecutor.sqlQuery("select * from user",new ArrayHandler());
 //        for (Object object:objects){
 //            System.out.println(object);
 //        }

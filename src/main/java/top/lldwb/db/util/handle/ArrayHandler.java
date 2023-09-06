@@ -5,7 +5,7 @@ import top.lldwb.db.util.ResultSetHandler;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class ObjectArrayHandler implements ResultSetHandler<Object[]> {
+public class ArrayHandler implements ResultSetHandler<Object[]> {
     @Override
     public Object[] handler(ResultSet resultSet) throws SQLException {
         return resultSet.next() ? RowProcessor.taArray(resultSet) : null;
