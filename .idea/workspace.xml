@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d58384a4-3668-4018-9818-43eebf06d2cd" name="更改" comment="完善">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ColumnListHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/MapListHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ObjectArrayListHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/AbstractListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/AbstractListHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +151,7 @@
       <workItem from="1693438857881" duration="14792000" />
       <workItem from="1693810646366" duration="2252000" />
       <workItem from="1693875434606" duration="15995000" />
-      <workItem from="1693913248303" duration="953000" />
+      <workItem from="1693913248303" duration="3305000" />
     </task>
     <task id="LOCAL-00001" summary="完成javaBean拷贝">
       <created>1693443696485</created>
@@ -221,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693903069893</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="完善">
+      <created>1693917148022</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1693917148022</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
