@@ -1,13 +1,11 @@
 package top.lldwb.db.util;
 
 import org.junit.jupiter.api.Test;
-import top.lldwb.db.util.entity.TestList;
 import top.lldwb.db.util.entity.User;
 import top.lldwb.db.util.handle.*;
 
 import java.beans.IntrospectionException;
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;

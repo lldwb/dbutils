@@ -1,8 +1,5 @@
 package top.lldwb.db.util.type;
 
-import java.beans.PropertyDescriptor;
-import java.lang.reflect.Field;
-
 public interface TypeSwitch<T> {
     /**
      * 进行判断,看实现类是否可以执行

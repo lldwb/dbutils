@@ -10,9 +10,9 @@ public class TypeSwitchChain<T> {
     private Iterator<TypeSwitch> iterator = switches.iterator();
 
     public T doTypeSwitch(Class<?> clazz, Object value) {
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             TypeSwitch<T> tTypeSwitch = iterator.next();
-            if (tTypeSwitch.supports(clazz)){
+            if (tTypeSwitch.supports(clazz)) {
                 return tTypeSwitch.valueOf(value);
             }
         }
