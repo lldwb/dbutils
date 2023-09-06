@@ -6,7 +6,6 @@ import java.sql.SQLException;
 public class ArrayListHandler extends AbstractListHandler<Object[]>{
     @Override
     public Object[] handleRow(ResultSet resultSet) throws SQLException {
-        ArrayHandler handler = new ArrayHandler();
-        return handler.handler(resultSet);
+        return RowProcessor.taArray(resultSet);
     }
 }

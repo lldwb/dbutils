@@ -39,13 +39,13 @@ class SqlExecutorTest {
 //        User user = sqlExecutor.sqlQuery("select * from user", new BeanHandler<>(User.class));
 //        System.out.println(user);
 
-//        sqlExecutor = new SqlExecutor(ConnectionUtils.getConnection());
-//        List<User> list = sqlExecutor.sqlQuery("select * from user", new BeanListHandler<>(User.class));
-//        list.forEach(k -> System.out.println(k));
-
         sqlExecutor = new SqlExecutor(ConnectionUtils.getConnection());
-        TestList testList = sqlExecutor.sqlQuery("select * from test", new BeanHandler<>(TestList.class));
-        System.out.println(testList.getList());
+        List<User> list = sqlExecutor.sqlQuery("select * from user", new BeanListHandler<>(User.class));
+        list.forEach(k -> System.out.println(k));
+
+//        sqlExecutor = new SqlExecutor(ConnectionUtils.getConnection());
+//        TestList testList = sqlExecutor.sqlQuery("select * from test", new BeanHandler<>(TestList.class));
+//        System.out.println(testList.getList());
     }
 
     @Test

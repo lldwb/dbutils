@@ -4,15 +4,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class BeanListHandler<T> extends AbstractListHandler<T>{
-    private Class<?> clazz;
+    private Class<T> clazz;
 
-    public BeanListHandler(Class<?> clazz) {
+    public BeanListHandler(Class<T> clazz) {
         this.clazz = clazz;
     }
 
     @Override
     public T handleRow(ResultSet resultSet) throws SQLException {
-        BeanHandler<T> beanHandler = new BeanHandler(clazz);
-        return beanHandler.handler(resultSet);
+        return RowProcessor.toBean(resultSet,clazz);
     }
 }

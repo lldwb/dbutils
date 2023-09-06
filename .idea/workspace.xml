@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d58384a4-3668-4018-9818-43eebf06d2cd" name="更改" comment="完善">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ColumnListHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/MapListHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ObjectArrayListHandler.java" afterDir="false" />
+    <list default="true" id="d58384a4-3668-4018-9818-43eebf06d2cd" name="更改" comment="完善多行查询">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/AbstractListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/AbstractListHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ArrayListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ArrayListHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/BeanListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/BeanListHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ColumnHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ColumnHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ColumnListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/ColumnListHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/MapListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lldwb/db/util/handle/MapListHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/top/lldwb/db/util/SqlExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/top/lldwb/db/util/SqlExecutorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +156,7 @@
       <workItem from="1693438857881" duration="14792000" />
       <workItem from="1693810646366" duration="2252000" />
       <workItem from="1693875434606" duration="15995000" />
-      <workItem from="1693913248303" duration="3305000" />
+      <workItem from="1693913248303" duration="5362000" />
     </task>
     <task id="LOCAL-00001" summary="完成javaBean拷贝">
       <created>1693443696485</created>
@@ -230,7 +235,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693917148022</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="完善多行查询">
+      <created>1693960269818</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1693960269818</updated>
+    </task>
+    <task id="LOCAL-00013" summary="完善多行查询">
+      <created>1693960482323</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1693960482323</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -240,6 +259,7 @@
     <MESSAGE value="类型责任链：从反射包扫描修改成sqi机制" />
     <MESSAGE value="优化" />
     <MESSAGE value="完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善" />
+    <MESSAGE value="完善多行查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善多行查询" />
   </component>
 </project>
